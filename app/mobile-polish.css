@@ -1,0 +1,55 @@
+/* Final responsive pass: preserve the Elite look while keeping every section usable on phones. */
+html,body{max-width:100%;overflow-x:hidden}img,video,iframe{max-width:100%}
+.packageVideo{height:clamp(160px,14vw,210px);background:#030403}
+.packageVideo video{object-fit:contain;object-position:center}
+
+@media(max-width:900px){
+  body{padding-bottom:82px}
+  .nav{width:100%;gap:12px}
+  .brand{min-width:0}.brand img{max-width:120px}
+  .hero,.shopHero,.ledVideoHero{min-height:calc(100svh - 64px)}
+  .heroContent,.shopHeroContent,.ledVideoCopy{width:100%;max-width:100%}
+  .hero h1,.shopHero h1,.ledVideoCopy h1{font-size:clamp(2.65rem,12vw,4rem);line-height:.9;overflow-wrap:normal}
+  .heroCopy,.shopHeroContent>p:not(.eyebrow),.ledVideoCopy>p:not(.eyebrow){font-size:14px;line-height:1.6}
+  .heroActions{width:100%}.heroActions a,.quoteActions a{width:100%;text-align:center;justify-content:center}
+  .heroMeta{margin-top:32px}.heroMark{display:none}
+  .ticker{height:44px;font-size:23px}
+  .section,.about,.transformCopy,.shopWork,.shopStatement>div:first-child{padding-left:18px;padding-right:18px}
+  .sectionHead h2,.transformCopy h2,.about h2,.reviewsIntro h2,.shopWorkHead h2,.shopStatement h2,.quoteIntro h2{font-size:clamp(2.35rem,10.5vw,3.15rem);line-height:.92}
+  .sectionHead>p,.shopWorkHead>p{font-size:14px}
+  .packageCard{padding:22px}.packageCard h3{font-size:23px;margin-top:30px}.price{font-size:46px}.cardCopy{min-height:0}
+  .packageVideo{height:auto;aspect-ratio:3/2;margin-bottom:20px}.packageVideo video{object-fit:contain}
+  .serviceGrid article,.shopTypeGrid article{min-height:220px;padding:28px 22px}
+  .transformation{min-height:0}.transformVisual{padding:14px;gap:12px}.visualPanel{min-height:330px;padding:18px}
+  .flow{gap:9px;flex-wrap:wrap}.flow span{padding:11px 12px}
+  .stats{gap:10px}.stats b{font-size:27px}
+  .workCard{width:min(84vw,390px);height:min(62svh,470px)}
+  .shopProject,.shopProject.project1,.shopProject.project4,.shopProject.project5{width:min(84vw,390px);height:min(64svh,500px)}
+  .shopStatement{min-height:0}.shopStack{min-height:360px;padding:20px}.shopStack span{padding:20px;font-size:1.5rem}
+  .steps{margin-inline:-18px;padding-left:18px;scroll-snap-type:x mandatory}.steps div{min-width:190px;scroll-snap-align:start}
+  .reviews,.quote{padding-left:18px;padding-right:18px}.ratingCard{padding:26px}.rating{font-size:60px}
+  .ghlFrame{width:100%;min-width:0}.ghlFrame iframe{width:100%!important;min-width:0!important}
+  footer{padding-left:18px;padding-right:18px}footer img{max-width:150px}
+  .mobileQuote{min-height:52px;display:flex;align-items:center;justify-content:center}
+}
+
+@media(max-width:560px){
+  .hero,.shopHero{padding-left:16px;padding-right:16px}
+  .ledVideoHero{padding-left:0;padding-right:0}.ledVideoCopy{margin-left:16px;margin-right:16px}
+  .eyebrow,.kicker{font-size:9px;letter-spacing:1.35px}
+  .hero h1,.shopHero h1,.ledVideoCopy h1{font-size:clamp(2.35rem,11.8vw,3.35rem)}
+  .btnPrimary,.btnOutline{padding:14px 16px;font-size:10px}
+  .heroMeta{font-size:8px}.videoMeta{font-size:7px;gap:9px}.videoScroll{display:none}
+  .transformVisual{grid-template-columns:1fr}.visualPanel{min-height:250px}
+  .stats{grid-template-columns:1fr 1fr}.stats span{font-size:8px}
+  .socialLinks a{padding:12px}
+  .quote{padding-top:70px;padding-bottom:70px}.quoteIntro{padding-bottom:30px}.ghlFrame{margin-inline:0}
+  .shopWorkGrid,.workTrack{gap:12px}.workCard,.shopProject,.shopProject.project1,.shopProject.project4,.shopProject.project5{width:86vw}
+  .shopProjectOverlay,.workOverlay{padding-left:18px;padding-right:18px}
+}
+
+@media(max-width:370px){
+  .hero h1,.shopHero h1,.ledVideoCopy h1{font-size:2.25rem}
+  .sectionHead h2,.transformCopy h2,.about h2,.reviewsIntro h2,.shopWorkHead h2,.shopStatement h2,.quoteIntro h2{font-size:2.15rem}
+  .packageCard{padding:18px}.price{font-size:42px}
+}
