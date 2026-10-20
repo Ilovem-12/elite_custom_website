@@ -53,3 +53,23 @@ html,body{max-width:100%;overflow-x:hidden}img,video,iframe{max-width:100%}
   .sectionHead h2,.transformCopy h2,.about h2,.reviewsIntro h2,.shopWorkHead h2,.shopStatement h2,.quoteIntro h2{font-size:2.15rem}
   .packageCard{padding:18px}.price{font-size:42px}
 }
+
+/* Phone layout: keep the whole hero film visible above the headline. */
+.heroVideo{background:#030403}
+.heroVideo:focus-visible,a:focus-visible{outline:3px solid var(--g);outline-offset:4px}
+.ghlFrame iframe{height:1447px}.ghlFrame{min-height:1490px}
+.workCard:focus-visible .workOverlay b{max-height:30px;opacity:1}
+@media(max-width:900px){
+ .hero{display:flex;flex-direction:column;align-items:stretch;padding:0 0 38px;min-height:0}
+ .heroVideo{position:relative;inset:auto;width:100%;height:auto;aspect-ratio:16/9;object-fit:contain;filter:none;z-index:2}
+ .heroShade{background:linear-gradient(0deg,#030403,rgba(0,0,0,.35));pointer-events:none}
+ .heroGrid,.heroGlow{pointer-events:none}
+ .heroContent{padding:28px 20px 0}.hero h1{margin:22px 0;line-height:1;letter-spacing:-.045em}
+ .heroMeta{margin-top:25px}.heroActions a{min-height:48px;display:flex;align-items:center}
+ .nav>.navCta{display:block;font-size:10px;padding:12px 14px;box-shadow:none}
+ .workTrack{gap:14px}.workCard{height:auto;aspect-ratio:4/3;width:min(88vw,480px)}
+ .workCard img{object-position:center 60%}.workOverlay{padding:65px 18px 18px}.workOverlay h3{font-size:21px}
+ .ghlFrame{padding:42px 0 8px;min-height:1497px}.ghlFrame iframe{height:1447px}
+ .mobileQuote{bottom:max(12px,env(safe-area-inset-bottom))}
+ section[id]{scroll-margin-top:80px}
+}
