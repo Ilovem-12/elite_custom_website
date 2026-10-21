@@ -5,7 +5,7 @@
     "vehicle": "Dual Cab",
     "name": "Lower door decals",
     "coverage": "Bottom door panels",
-    "price": 850.0,
+    "price": 799,
     "image": "/pricing/vehicle-2.webp"
   },
   {
@@ -14,7 +14,7 @@
     "vehicle": "Dual Cab",
     "name": "Quarter wrap",
     "coverage": "Both sides",
-    "price": 2295.0,
+    "price": 2299,
     "image": "/pricing/vehicle-3.webp"
   },
   {
@@ -23,7 +23,7 @@
     "vehicle": "Dual Cab",
     "name": "Half wrap",
     "coverage": "Both sides and full rear",
-    "price": 3230.0,
+    "price": 3199,
     "image": "/pricing/vehicle-4.webp"
   },
   {
@@ -32,7 +32,7 @@
     "vehicle": "Dual Cab",
     "name": "Three-quarter wrap",
     "coverage": "Both sides and full rear",
-    "price": 4080.0,
+    "price": 4099,
     "image": "/pricing/vehicle-5.webp"
   },
   {
@@ -41,7 +41,7 @@
     "vehicle": "Dual Cab",
     "name": "Full wrap",
     "coverage": "Entire vehicle including roof",
-    "price": 5950.0,
+    "price": 5899,
     "image": "/pricing/vehicle-6.webp"
   },
   {
@@ -50,7 +50,7 @@
     "vehicle": "Dual Cab Tray Back",
     "name": "Tray panels",
     "coverage": "Three side tray panels",
-    "price": 1020.0,
+    "price": 999,
     "image": "/pricing/vehicle-7.webp"
   },
   {
@@ -59,7 +59,7 @@
     "vehicle": "Dual Cab Tray Back",
     "name": "Half wrap",
     "coverage": "Both sides",
-    "price": 1955.0,
+    "price": 1999,
     "image": "/pricing/vehicle-8.webp"
   },
   {
@@ -68,7 +68,7 @@
     "vehicle": "Dual Cab Tray Back",
     "name": "Three-quarter wrap",
     "coverage": "Both sides",
-    "price": 2805.0,
+    "price": 2799,
     "image": "/pricing/vehicle-9.webp"
   },
   {
@@ -77,7 +77,7 @@
     "vehicle": "Dual Cab Tray Back",
     "name": "Full cabin wrap",
     "coverage": "Entire cabin including roof",
-    "price": 4632.5,
+    "price": 4599,
     "image": "/pricing/vehicle-10.webp"
   },
   {
@@ -86,7 +86,7 @@
     "vehicle": "Dual Cab Toolbox",
     "name": "Toolbox wrap",
     "coverage": "Entire toolbox",
-    "price": 1700.0,
+    "price": 1699,
     "image": "/pricing/vehicle-11.webp"
   },
   {
@@ -95,7 +95,7 @@
     "vehicle": "Single Cab Ute",
     "name": "Tray panels",
     "coverage": "Three side tray panels",
-    "price": 1190.0,
+    "price": 1199,
     "image": "/pricing/vehicle-12.webp"
   },
   {
@@ -104,7 +104,7 @@
     "vehicle": "Single Cab Ute",
     "name": "Quarter wrap",
     "coverage": "Quarter of cabin",
-    "price": 1232.5,
+    "price": 1199,
     "image": "/pricing/vehicle-13.webp"
   },
   {
@@ -113,7 +113,7 @@
     "vehicle": "Single Cab Ute",
     "name": "Half wrap",
     "coverage": "Half of cabin",
-    "price": 1700.0,
+    "price": 1699,
     "image": "/pricing/vehicle-14.webp"
   },
   {
@@ -122,7 +122,7 @@
     "vehicle": "Single Cab Ute",
     "name": "Full wrap",
     "coverage": "Entire vehicle including roof",
-    "price": 3400.0,
+    "price": 3399,
     "image": "/pricing/vehicle-15.webp"
   },
   {
@@ -131,7 +131,7 @@
     "vehicle": "Single Cab Ute",
     "name": "Cabin & tray package",
     "coverage": "Cabin and trays",
-    "price": 4590.0,
+    "price": 4599,
     "image": "/pricing/vehicle-16.webp"
   },
   {
@@ -140,7 +140,7 @@
     "vehicle": "Single Cab Toolbox",
     "name": "Toolbox wrap",
     "coverage": "Entire toolbox",
-    "price": 1870.0,
+    "price": 1899,
     "image": "/pricing/vehicle-17.webp"
   },
   {
@@ -149,7 +149,7 @@
     "vehicle": "Standard Van",
     "name": "Spot decals",
     "coverage": "Side and rear graphics",
-    "price": 2040.0,
+    "price": 1999,
     "image": "/pricing/vehicle-18.webp"
   },
   {
@@ -158,7 +158,7 @@
     "vehicle": "Standard Van",
     "name": "Quarter wrap",
     "coverage": "Sides; rear-window graphics quoted separately",
-    "price": 2040.0,
+    "price": 1999,
     "image": "/pricing/vehicle-19.webp"
   },
   {
@@ -167,7 +167,7 @@
     "vehicle": "Standard Van",
     "name": "Half wrap",
     "coverage": "Sides and rear; window graphics quoted separately",
-    "price": 3230.0,
+    "price": 3199,
     "image": "/pricing/vehicle-20.webp"
   },
   {
@@ -176,7 +176,7 @@
     "vehicle": "Standard Van",
     "name": "Three-quarter wrap",
     "coverage": "Three-quarter vehicle coverage",
-    "price": 4250.0,
+    "price": 4199,
     "image": "/pricing/vehicle-21.webp"
   },
   {
@@ -185,7 +185,7 @@
     "vehicle": "Standard Van",
     "name": "Full wrap",
     "coverage": "Entire vehicle; roof excluded",
-    "price": 5950.0,
+    "price": 5899,
     "image": "/pricing/vehicle-22.webp"
   },
   {
@@ -194,7 +194,7 @@
     "vehicle": "Extra Large Van",
     "name": "Half wrap",
     "coverage": "Both sides and full rear",
-    "price": 4080.0,
+    "price": 4099,
     "image": "/pricing/vehicle-23.webp"
   },
   {
@@ -203,7 +203,7 @@
     "vehicle": "Extra Large Van",
     "name": "Full wrap",
     "coverage": "Entire vehicle; roof excluded",
-    "price": 6800.0,
+    "price": 6799,
     "image": "/pricing/vehicle-24.webp"
   },
   {
@@ -212,7 +212,7 @@
     "vehicle": "Truck Cab",
     "name": "Tray panels",
     "coverage": "All tray panels",
-    "price": 1572.5,
+    "price": 1599,
     "image": "/pricing/vehicle-25.webp"
   },
   {
@@ -221,7 +221,7 @@
     "vehicle": "Truck Cab",
     "name": "Half wrap",
     "coverage": "Both sides and front",
-    "price": 1870.0,
+    "price": 1899,
     "image": "/pricing/vehicle-26.webp"
   },
   {
@@ -230,7 +230,7 @@
     "vehicle": "Truck Cab",
     "name": "Full cabin wrap",
     "coverage": "Entire cabin",
-    "price": 4250.0,
+    "price": 4199,
     "image": "/pricing/vehicle-27.webp"
   },
   {
@@ -239,7 +239,7 @@
     "vehicle": "Large Truck",
     "name": "Tipper wrap",
     "coverage": "Tipper sides and rear",
-    "price": 2422.5,
+    "price": 2399,
     "image": "/pricing/vehicle-28.webp"
   },
   {
@@ -248,7 +248,7 @@
     "vehicle": "Large Truck",
     "name": "Cabin wrap",
     "coverage": "Entire cabin; roof excluded",
-    "price": 5695.0,
+    "price": 5699,
     "image": "/pricing/vehicle-29.webp"
   },
   {
@@ -257,7 +257,7 @@
     "vehicle": "Large Truck",
     "name": "Cabin & tipper package",
     "coverage": "Cabin and tipper; roof excluded",
-    "price": 7395.0,
+    "price": 7399,
     "image": "/pricing/vehicle-30.webp"
   },
   {
@@ -266,7 +266,7 @@
     "vehicle": "Hatchback",
     "name": "One-way vision",
     "coverage": "Rear-window one-way vision",
-    "price": 382.5,
+    "price": 399,
     "image": "/pricing/vehicle-31.webp"
   },
   {
@@ -275,7 +275,7 @@
     "vehicle": "Hatchback",
     "name": "Half wrap",
     "coverage": "Both sides and full rear",
-    "price": 2720.0,
+    "price": 2699,
     "image": "/pricing/vehicle-32.webp"
   },
   {
@@ -284,7 +284,7 @@
     "vehicle": "Hatchback",
     "name": "Full wrap",
     "coverage": "Entire vehicle",
-    "price": 5440.0,
+    "price": 5399,
     "image": "/pricing/vehicle-33.webp"
   }
 ]
