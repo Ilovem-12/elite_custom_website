@@ -7,12 +7,6 @@ const packages = [
   { name: "Partial Wrap", tag: "HIGH IMPACT", desc: "Larger custom wrap coverage, layered graphics and a stronger branded presence.", video: "/partial-wrap-coverage.mp4", poster: "/partial-wrap-coverage-poster.webp" },
   { name: "Custom Shop Signage", tag: "SHOPFRONT SYSTEM", desc: "A tailored signage package for your shopfront, windows, walls and customer-facing spaces.", href: "/shop-signage" },
 ];
-const services = [
-  ["01", "Vehicle Signage", "Logos, service lists, cut vinyl and printed laminated graphics designed for fast 3-second readability."],
-  ["02", "Commercial Wraps", "Quarter, partial, three-quarter and full wraps built around your brand and vehicle body lines."],
-  ["03", "Van Fitouts", "Ply lining, floors, shelving, drawers, cabinetry and custom CNC-produced work-van solutions."],
-  ["04", "More Signage", "One-way vision, trailer graphics, fleet branding and shopfront signage from one workshop."],
-];
 const projects = [
   { src:"/work/my-electrician.webp", title:"My Electrician 24/7", type:"Commercial Vehicle Branding" },
   { src:"/work/pureline-plumbing.webp", title:"Pureline Plumbing Solutions", type:"Commercial Van Wrap" },
