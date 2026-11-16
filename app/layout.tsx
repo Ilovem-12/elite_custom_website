@@ -13,5 +13,6 @@ import "./shop-work.css";
 import "./package-video.css";
 import "./mobile-polish.css";
 import "./home-refresh.css";
+import "./gallery-page.css";
 export const metadata: Metadata = { title:"Elite Custom | Vehicle Signage & Wraps Melbourne", description:"Commercial vehicle signage, decals, partial wraps and shop signage in Rowville, Melbourne. Custom design and professional installation." };
 export default function RootLayout({children}:Readonly<{children:React.ReactNode}>){return <html lang="en"><body>{children}<Script src="https://widgets.leadconnectorhq.com/loader.js" data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js" data-widget-id="6a8ced77413c619641afd964" strategy="afterInteractive"/></body></html>}
