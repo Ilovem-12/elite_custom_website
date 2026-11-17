@@ -1,4 +1,13 @@
 import Link from "next/link";
+const newMedia = [
+  { kind: "image", src: "/work/power-arc-rear.jpg", alt: "Power Arc Electrical van rear" },
+  { kind: "image", src: "/work/power-arc-angle.jpg", alt: "Power Arc Electrical van side and rear" },
+  { kind: "image", src: "/work/my-electrician-new.jpg", alt: "My Electrician commercial van" },
+  { kind: "image", src: "/work/legacy-autoglass-rear.jpg", alt: "Legacy Autoglass van rear" },
+  { kind: "image", src: "/work/legacy-autoglass-side.jpg", alt: "Legacy Autoglass van side" },
+  { kind: "video", src: "/work/elite-workshop-video.mp4", alt: "Workshop project video" },
+  { kind: "video", src: "/work/power-arc-video.mp4", alt: "Power Arc Electrical vehicle video" },
+];
 const work = [
  {src:"/work/my-electrician.webp",name:"My Electrician 24/7",type:"Commercial Vehicle Branding"},
  {src:"/work/pureline-plumbing.webp",name:"Pureline Plumbing Solutions",type:"Commercial Van Wrap"},
@@ -19,10 +28,14 @@ export const metadata={title:"Our Work | Elite Custom Signage",description:"See 
 export default function OurWork(){
 return <main className="galleryPage">
 <nav className="nav"><Link className="brand" href="/"><img src="/elite-customs.jpeg" alt="Elite Custom Signage"/></Link><div className="navLinks"><Link href="/">Home</Link><Link href="/pricing">Pricing</Link><Link href="/shop-signage">Shop Signage</Link></div><Link className="navCta" href="/#quote">Get a Quote</Link></nav>
-<section className="galleryIntro"><p className="kicker">[ REAL PROJECTS. REAL BUSINESSES. ]</p><h1>OUR <em>WORK.</em></h1><p>Vehicle wraps, commercial signage and decals — designed, produced and installed in Melbourne.</p></section>
-<section className="galleryGrid" aria-label="Completed commercial vehicle signage projects">{work.map(p=><article key={p.name}><img src={p.src} alt={p.name+" vehicle signage project"} loading="lazy"/><div><h2>{p.name}</h2><p>{p.type}</p></div></article>)}</section>
-<section className="galleryIntro gallerySubheading"><p className="kicker">[ SHOPFRONT & WINDOW GRAPHICS ]</p><h2>SHOP <em>SIGNAGE.</em></h2><p>More completed shopfronts, illuminated signs and window branding from our original website gallery.</p></section>
-<section className="galleryGrid" aria-label="Completed shop signage projects">{shopWork.map(p=><article key={p.name}><img src={p.src} alt={p.name+" shop signage project"} loading="lazy"/><div><h2>{p.name}</h2><p>{p.type}</p></div></article>)}</section>
+<section className="galleryIntro"><h1>OUR <em>WORK.</em></h1></section>
+<section className="galleryGrid galleryMediaGrid" aria-label="Completed vehicle signage photos and videos">
+{newMedia.map(p=><div className="galleryMediaItem" key={p.src}>
+  {p.kind === "video" ? <video src={p.src} controls playsInline preload="metadata" aria-label={p.alt}/> : <img src={p.src} alt={p.alt} loading="lazy"/>}
+</div>)}
+{work.map(p=><div className="galleryMediaItem" key={p.src}><img src={p.src} alt={p.name} loading="lazy"/></div>)}
+{shopWork.map(p=><div className="galleryMediaItem" key={p.src}><img src={p.src} alt={p.name} loading="lazy"/></div>)}
+</section>
 <section className="gallerySocial"><h2>SEE MORE OF OUR WORK.</h2><p>Follow our latest wraps, designs and completed installations.</p><div><a href="https://www.instagram.com/elitecustomsignage/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/@elite_custom_signage_" target="_blank" rel="noopener noreferrer">TikTok ↗</a></div></section>
 <section className="galleryCTA"><h2>READY TO BRAND YOUR VEHICLE?</h2><Link className="btnPrimary" href="/#quote">Get a Quote →</Link><a className="btnOutline" href="tel:0468095014">Call Now</a></section>
 <div className="stickyContact"><Link href="/#quote">Get a Quote</Link><a href="tel:0468095014">Call Now</a></div>
