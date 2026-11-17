@@ -51,3 +51,19 @@
  .nav>.navCta{padding:11px 10px;font-size:9px}
 }
 @media(max-width:390px){.cleanHero h1{font-size:clamp(2.15rem,10vw,2.7rem)}.cleanHero .heroMeta{font-size:9px}.nav>.navCta{display:none}}
+
+
+/* No media in the opening hero: typography and quote actions lead. */
+.cleanHero.noPhoto{display:flex;justify-content:center;align-items:center;text-align:center;padding:100px 6vw 95px;min-height:540px;max-width:none;background:#fff}
+.cleanHero.noPhoto .heroContent{max-width:1050px;width:100%}
+.cleanHero.noPhoto h1{font-size:clamp(3.2rem,7.2vw,7rem);margin:24px 0}
+.cleanHero.noPhoto .heroCopy{margin:0 auto;max-width:650px}
+.cleanHero.noPhoto .heroActions,.cleanHero.noPhoto .heroMeta{justify-content:center}
+@media(max-width:900px){
+ .cleanHero.noPhoto{display:flex;min-height:0;padding:70px 18px 65px;align-items:center}
+ .cleanHero.noPhoto .heroContent{padding:0}
+ .cleanHero.noPhoto h1{font-size:clamp(2.45rem,10.5vw,5.1rem)}
+ .cleanHero.noPhoto .heroActions{display:grid;grid-template-columns:1fr 1fr;width:100%}
+ .cleanHero.noPhoto .heroMeta{justify-content:center}
+}
+@media(max-width:420px){.cleanHero.noPhoto{padding-top:58px;padding-bottom:55px}.cleanHero.noPhoto h1{font-size:clamp(2.2rem,10vw,2.9rem)}}
