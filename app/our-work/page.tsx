@@ -1,4 +1,5 @@
 import Link from "next/link";
+import GalleryMedia from "./GalleryMedia";
 const newMedia = [
   { kind: "image", src: "/work/power-arc-rear.jpg", alt: "Power Arc Electrical van rear" },
   { kind: "image", src: "/work/power-arc-angle.jpg", alt: "Power Arc Electrical van side and rear" },
@@ -30,11 +31,9 @@ return <main className="galleryPage">
 <nav className="nav"><Link className="brand" href="/"><img src="/elite-customs.jpeg" alt="Elite Custom Signage"/></Link><div className="navLinks"><Link href="/">Home</Link><Link href="/pricing">Pricing</Link><Link href="/shop-signage">Shop Signage</Link></div><Link className="navCta" href="/#quote">Get a Quote</Link></nav>
 <section className="galleryIntro"><h1>OUR <em>WORK.</em></h1></section>
 <section className="galleryGrid galleryMediaGrid" aria-label="Completed vehicle signage photos and videos">
-{newMedia.map(p=><div className="galleryMediaItem" key={p.src}>
-  {p.kind === "video" ? <video src={p.src} controls playsInline preload="metadata" aria-label={p.alt}/> : <img src={p.src} alt={p.alt} loading="lazy"/>}
-</div>)}
-{work.map(p=><div className="galleryMediaItem" key={p.src}><img src={p.src} alt={p.name} loading="lazy"/></div>)}
-{shopWork.map(p=><div className="galleryMediaItem" key={p.src}><img src={p.src} alt={p.name} loading="lazy"/></div>)}
+{newMedia.map(p=><GalleryMedia key={p.src} src={p.src} alt={p.alt} kind={p.kind as "image" | "video"}/>)}
+{work.map(p=><GalleryMedia key={p.src} src={p.src} alt={p.name}/>)}
+{shopWork.map(p=><GalleryMedia key={p.src} src={p.src} alt={p.name}/>)}
 </section>
 <section className="gallerySocial"><h2>SEE MORE OF OUR WORK.</h2><p>Follow our latest wraps, designs and completed installations.</p><div><a href="https://www.instagram.com/elitecustomsignage/" target="_blank" rel="noopener noreferrer">Instagram ↗</a><a href="https://www.tiktok.com/@elite_custom_signage_" target="_blank" rel="noopener noreferrer">TikTok ↗</a></div></section>
 <section className="galleryCTA"><h2>READY TO BRAND YOUR VEHICLE?</h2><Link className="btnPrimary" href="/#quote">Get a Quote →</Link><a className="btnOutline" href="tel:0468095014">Call Now</a></section>
