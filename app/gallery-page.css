@@ -11,3 +11,10 @@
 .galleryCTA .btnOutline{background:white;color:black;border-color:#111}
 @media(max-width:900px){.galleryIntro{padding:55px 18px 22px}.galleryGrid{padding:12px 18px 80px;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.galleryGrid article>div{padding:12px}.galleryGrid h2{font-size:15px}.galleryGrid p{font-size:11px}.gallerySocial,.galleryCTA{padding:65px 18px}}
 @media(max-width:540px){.galleryGrid{grid-template-columns:1fr}.galleryIntro h1{font-size:3.5rem}.gallerySocial div{flex-direction:column}.galleryCTA a{display:block;margin:12px auto;max-width:300px}}
+
+/* Secondary gallery category for images recovered from the original shop-signage page. */
+.gallerySubheading{padding-top:18px;padding-bottom:20px}
+.gallerySubheading h2{font-size:clamp(2.5rem,6vw,5rem);line-height:1;font-weight:900;font-style:italic;letter-spacing:-.06em;margin:12px 0}
+.gallerySubheading em{color:#19bd51}
+.galleryGrid+.gallerySubheading{border-top:1px solid #dce6de;margin:0 6vw;padding-left:0;padding-right:0}
+@media(max-width:900px){.galleryGrid+.gallerySubheading{margin:0 18px}.gallerySubheading{padding-top:32px}}
