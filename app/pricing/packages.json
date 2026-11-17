@@ -4,7 +4,7 @@
     "category": "utes",
     "vehicle": "Dual Cab",
     "name": "Lower door decals",
-    "coverage": "Bottom door panels",
+    "coverage": "Bottom door panels, with matching rear-tailgate lower strip",
     "price": 799,
     "image": "/pricing/vehicle-2.webp"
   },
@@ -13,7 +13,7 @@
     "category": "utes",
     "vehicle": "Dual Cab",
     "name": "Quarter wrap",
-    "coverage": "Both sides",
+    "coverage": "Both sides with lower rear-tailgate strip",
     "price": 2299,
     "image": "/pricing/vehicle-3.webp"
   },
@@ -84,8 +84,8 @@
     "id": 11,
     "category": "utes",
     "vehicle": "Dual Cab Toolbox",
-    "name": "Toolbox wrap",
-    "coverage": "Entire toolbox",
+    "name": "Full toolbox wrap",
+    "coverage": "Entire toolbox (cab not included)",
     "price": 1699,
     "image": "/pricing/vehicle-11.webp"
   },
@@ -148,8 +148,8 @@
     "category": "vans",
     "vehicle": "Standard Van",
     "name": "Spot decals",
-    "coverage": "Side and rear graphics",
-    "price": 1999,
+    "coverage": "Side and rear spot decals + extras",
+    "price": 1799,
     "image": "/pricing/vehicle-18.webp"
   },
   {
@@ -166,8 +166,8 @@
     "category": "vans",
     "vehicle": "Standard Van",
     "name": "Half wrap",
-    "coverage": "Sides and rear; window graphics quoted separately",
-    "price": 3199,
+    "coverage": "Sides, rear and window graphics (one-way vision priced separately)",
+    "price": 2999,
     "image": "/pricing/vehicle-20.webp"
   },
   {
@@ -184,7 +184,7 @@
     "category": "vans",
     "vehicle": "Standard Van",
     "name": "Full wrap",
-    "coverage": "Entire vehicle; roof excluded",
+    "coverage": "Entire vehicle excluding roof",
     "price": 5899,
     "image": "/pricing/vehicle-22.webp"
   },
