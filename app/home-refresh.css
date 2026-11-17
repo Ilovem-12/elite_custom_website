@@ -67,3 +67,13 @@
  .cleanHero.noPhoto .heroMeta{justify-content:center}
 }
 @media(max-width:420px){.cleanHero.noPhoto{padding-top:58px;padding-bottom:55px}.cleanHero.noPhoto h1{font-size:clamp(2.2rem,10vw,2.9rem)}}
+
+/* Keep the contact actions unmistakable and away from the GHL chat popup. */
+@media(min-width:901px){
+ .stickyContact{right:18px;bottom:132px;z-index:9999;flex-direction:column;gap:7px;padding:8px;border-radius:14px;box-shadow:0 10px 34px #0003}
+ .stickyContact a{min-width:142px;min-height:50px;font-size:13px}
+}
+@media(max-width:900px){
+ .stickyContact{z-index:9999;left:0;right:0;bottom:0;width:100%;display:flex!important;visibility:visible!important;opacity:1!important}
+ .stickyContact a{min-width:0}
+}
