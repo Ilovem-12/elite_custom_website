@@ -28,7 +28,7 @@ export default function VehiclePriceFinder() {
   }
 
   return <section className="vehicleFinder" id="vehicle-prices" aria-labelledby="vehicle-finder-title">
-    <div className="finderHeading"><div><p className="kicker">[ YOUR VEHICLE. YOUR PRICE GUIDE. ]</p><h2 id="vehicle-finder-title">WHAT DO<br/><em>YOU DRIVE?</em></h2></div><p>Choose your vehicle to see rough starting prices. Every figure comes from our vehicle price guide, with a tailored quote to confirm the final details.</p></div>
+    <div className="finderHeading"><div><p className="kicker">[ YOUR VEHICLE. YOUR PRICE GUIDE. ]</p><h2 id="vehicle-finder-title">WHAT DO<br/><em>YOU DRIVE?</em></h2></div><p>Choose your vehicle to see rough starting prices. See approximate graphic coverage and starting prices for your vehicle. Final coverage and pricing are confirmed in your tailored quote.</p></div>
     <form className="finderForm" onSubmit={event => { event.preventDefault(); setSelection({ category, make: chosenMake, model: chosenModel, style }); }}>
       <label>Vehicle type<select aria-label="Vehicle type" value={category} onChange={event => changeCategory(event.target.value as Selection['category'])}>{categories.map(c => <option key={c.value} value={c.value}>{c.label}</option>)}</select></label>
       {category !== 'other' ? <>
@@ -43,8 +43,13 @@ export default function VehiclePriceFinder() {
     {category !== 'other' ? <p className="finderHint">Choose the body style that matches your vehicle. Cab type, tray configuration, wheelbase and roof height can affect your quote.</p> : null}
     {selection ? <div className="finderResults" aria-live="polite" aria-atomic="true">
       {options.length ? <><div className="finderResultHeading"><div><p>ROUGH STARTING PRICES FOR</p><h3>{selection.make} {selection.model}</h3><span>{selection.style} · AUD + GST</span></div><Link href={`/pricing?${query}#price-guide`}>Explore prices for this vehicle ↗</Link></div>
-        <div className="finderPriceGrid">{options.map(p => <article key={p.id}><h4>{p.name}</h4><p>{p.coverage}</p><strong><small>FROM </small>{formatPrice(p.price)}<small> + GST</small></strong></article>)}</div>
-        <p className="finderEstimateNote">These are starting prices for your selected body style, subject to vehicle details, design and coverage. One-way vision and other add-ons cost extra; the one-way vision option above is a separately priced service.</p>
+        <div className="finderCoverageGuide"><span className="finderCoverageDot" aria-hidden="true"/> <strong>Green areas show approximate coverage</strong><span>Images are guides, not final artwork. Actual coverage depends on your vehicle.</span></div>
+        <div className="finderPriceGrid">{options.map(p => <article className="finderIllustratedCard" key={p.id}>
+          <div className="finderCardVisual"><img src={p.image} alt={`${p.name} coverage illustration for ${selection.style}; green areas show proposed graphic coverage`} loading="lazy"/></div>
+          <div className="finderCardDetails"><h4>{p.name}</h4><p>{p.coverage}</p><strong><small>FROM </small>{formatPrice(p.price)}<small> + GST</small></strong></div>
+          <Link className="finderCardLink" href={`/pricing?${query}#price-guide`}>Explore coverage →</Link>
+        </article>)}</div>
+        <p className="finderEstimateNote">Prices are indicative starting prices in AUD + GST. Green coverage images are illustrative guides only; they are not exact measurements or final designs. Vehicle size, artwork, windows and extras can change your quote. One-way vision and other add-ons may cost extra.</p>
         <div className="finderResultActions"><Link className="btnPrimary" href={`/pricing?${query}#price-guide`}>View coverage & full price guide →</Link><Link href="/#quote">Get a tailored quote ↗</Link></div></> : <div className="finderUnknown"><h3>Let’s find the right option for your vehicle.</h3><p>Send us the make, model and year. Our team will recommend the coverage and confirm a rough price.</p><Link className="btnPrimary" href="/#quote">Ask the team →</Link><Link href="/pricing">Browse all vehicle prices ↗</Link></div>}
     </div> : <Link className="finderBrowse" href="/pricing">Or browse all vehicle prices ↗</Link>}
   </section>;
